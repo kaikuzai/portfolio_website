@@ -3,9 +3,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: linear-gradient(to bottom, #ffffff, #f7f7f7);
+    /* background: #f7f7f7; */
+    background: linear-gradient(to bottom, #f1efef, #ffffff);
     text-align: center;
+    padding: 2rem 1rem;
   }
   
   .hero-title {

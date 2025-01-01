@@ -9,12 +9,10 @@ const HeroSection: React.FC = () => {
       <img src={imagePath} alt="Your Name" className="hero-image" />
       <h1 className="hero-title">Hi, I'm Dylan Okyere</h1>
       <p className="hero-subtitle">
-        Hardworking Business IT & Management student seeking new opportunities
-        to broaden their horizon in different IT-related facets. Experienced in
-        Data Analysis, Quality Assurance and Agile project management with
-        strong communication skills. Passionate about Big Data and Data
-        Analytics. Committed to utilising my skills to further the mission of a
-        company.
+        Business IT & Management professional with experience in Data Analytics,
+        Business Analysis, and Quality Assurance. Passionate about Cloud
+        Computing and Software Architecture, I love creating impactful solutions
+        that drive business success.
       </p>
       <div className="hero-buttons">
         <button className="btn-primary">View My Work</button>

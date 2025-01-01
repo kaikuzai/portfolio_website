@@ -2,6 +2,8 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import { routes } from "./routes/routeConfig";
 
+import "./styles/default.css";
+
 function App() {
   return (
     <Routes>

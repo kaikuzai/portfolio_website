@@ -1,0 +1,15 @@
+:root {
+    --primary: ;
+    --primary-dark: ;
+    --primary-hover: ; 
+    --secondary: #000 ; 
+    --secondary-dark: ; 
+    --secondary-hover: #333; 
+    --background-color: #f7f7f7; 
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}

@@ -1,54 +1,38 @@
-.hero-section {
+/* Make sure all sections stack properly */
+.homepage {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
+  flex-direction: column; 
+  padding: 0;
+  margin: 0;
 }
 
-.hero-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #000;
+
+.hero-section {
+  height: 90vh;
 }
 
-.hero-subtitle {
-  font-size: 1.2rem;
-  margin: 1rem 0;
-  color: #555;
-  max-width: 600px;
+.expertise-section {
+  height: 90vh;
 }
 
-.hero-buttons {
-  margin-top: 1rem; /* Reduce spacing */
+.footer {
+  height: 10vh;
 }
 
-.btn-primary,
-.btn-secondary {
-  padding: 0.8rem 1.5rem;
-  font-size: 1rem;
-  cursor: pointer;
-  margin: 0 0.5rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
-}
+/*  mobile devices  */
+@media (max-width: 1000px) {
 
-.btn-primary {
-  background-color: #000;
-  color: #fff;
-}
+  .hero-section {
+    height: auto;
+    padding: 2rem 1rem;
+  }
 
-.btn-primary:hover {
-  background-color: #333;
-}
+  .expertise-section {
+    padding: 2rem 1rem;
+    height: auto;
+  }
 
-.btn-secondary {
-  background-color: #fff;
-  color: #000;
-  border: 2px solid #000;
-}
-
-.btn-secondary:hover {
-  background-color: #f0f0f0;
+  .footer {
+    height: auto;
+  }
 }
