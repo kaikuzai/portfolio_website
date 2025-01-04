@@ -1,9 +1,17 @@
 import React from "react";
 import "./HeroSection.css";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection: React.FC = () => {
   const imagePath = "src/assets/headshot.JPEG";
 
+  const navigate = useNavigate();
+  const handleContact = () => {
+    navigate("/contact");
+  };
+  const handleWork = () => {
+    navigate("/skills");
+  };
   return (
     <div className="hero-section">
       <img src={imagePath} alt="Your Name" className="hero-image" />
@@ -15,8 +23,12 @@ const HeroSection: React.FC = () => {
         that drive business success.
       </p>
       <div className="hero-buttons">
-        <button className="btn-primary">View My Work</button>
-        <button className="btn-secondary">Contact Me</button>
+        <button className="btn-primary" onClick={handleWork}>
+          View My Work
+        </button>
+        <button className="btn-secondary" onClick={handleContact}>
+          Contact Me
+        </button>
       </div>
     </div>
   );

@@ -3,8 +3,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    /* background: #f7f7f7; */
-    background: linear-gradient(to bottom, #f1efef, #ffffff);
+    /* background: #d3d3d3; */
+    background: linear-gradient(to bottom, #ededed, #f1efef);
     text-align: center;
     padding: 2rem 1rem;
   }

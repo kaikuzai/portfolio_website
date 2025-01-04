@@ -1,5 +1,5 @@
 .contact-container {
-  min-height: 100vh;
+  min-height: 80vh;
   background: linear-gradient(to bottom, #ffffff, rgba(124, 58, 237, 0.05));
   padding: 2rem 1rem;
 }
