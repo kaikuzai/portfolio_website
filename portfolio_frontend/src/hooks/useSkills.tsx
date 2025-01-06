@@ -8,21 +8,16 @@ interface CardData {
 
 export const cardsDataExport: CardData[] = [
   {
-    icon: "📊",
+    icon: "/data.png",
     title: "Data Analysis",
     category_title: "data",
     description:
       "Transforming raw data into actionable insights through statistical analysis and visualization.",
-    skills: [
-      "Statistical Analysis",
-      "Data Visualization",
-      "Predictive Modeling",
-      "Python & R Programming",
-    ],
+    skills: ["Data Analysis", "Data Visualization", "SQL", "Python"],
   },
   {
-    icon: "📈",
-    title: "Business Analysis",
+    icon: "/development.png",
+    title: "Software Development",
     category_title: "development",
     description:
       "Bridging the gap between business needs and technical solutions through strategic analysis.",
@@ -34,7 +29,7 @@ export const cardsDataExport: CardData[] = [
     ],
   },
   {
-    icon: "☁️",
+    icon: "/cloud.png",
     title: "Cloud Solutions",
     category_title: "cloud",
     description:

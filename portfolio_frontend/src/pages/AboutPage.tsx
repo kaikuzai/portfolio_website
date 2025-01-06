@@ -1,43 +1,16 @@
 import { FC } from "react";
 import "../styles/AboutPage.css";
 import Navbar from "../components/Navbar/Navbar";
+import { useNavigate } from "react-router-dom";
+import { aboutSkillsExport } from "../hooks/useAboutSkills";
 
-interface Skill {
-  name: string;
-  category: "languages" | "tools" | "databases" | "frameworks" | "cloud";
-}
-
-const skills: Skill[] = [
-  // Languages
-  { name: "Python", category: "languages" },
-  { name: "R", category: "languages" },
-  { name: "SQL", category: "languages" },
-  { name: "TypeScript", category: "languages" },
-
-  // Tools
-  { name: "Looker Studio", category: "tools" },
-  { name: "Tableau", category: "tools" },
-  { name: "Power BI", category: "tools" },
-  { name: "JIRA", category: "tools" },
-  { name: "Git", category: "tools" },
-
-  // Databases
-  { name: "PostgreSQL", category: "databases" },
-  { name: "MySQL", category: "databases" },
-  { name: "MongoDB", category: "databases" },
-
-  // Frameworks
-  { name: "React", category: "frameworks" },
-  { name: "Django", category: "frameworks" },
-  { name: "Flask", category: "frameworks" },
-
-  // Cloud
-  { name: "AWS", category: "cloud" },
-  { name: "Azure", category: "cloud" },
-  { name: "Google Cloud", category: "cloud" },
-];
+const skills = aboutSkillsExport;
 
 export const AboutPage: FC = () => {
+  const navigate = useNavigate();
+  const handleNavigate = () => {
+    navigate("/skills");
+  };
   return (
     <>
       <Navbar />
@@ -50,7 +23,9 @@ export const AboutPage: FC = () => {
                 alt="Dylan"
                 className="profile-image"
               />
-              <button className="project-button">View My Projects</button>
+              <button className="project-button" onClick={handleNavigate}>
+                View My Projects
+              </button>
             </div>
 
             <div className="info-section">

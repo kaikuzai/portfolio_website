@@ -28,7 +28,7 @@ const ExpertiseCard: React.FC<ExpertiseCardProps> = ({
   };
   return (
     <div className="expertise-card">
-      <div className="icon">{icon}</div>
+      <img className="icon" src={icon}></img>
       <h3 className="title">{title}</h3>
       <p className="description">{description}</p>
       <ul className="skills">
