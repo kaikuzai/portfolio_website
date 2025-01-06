@@ -1,3 +1,4 @@
+import { AboutPage } from "../pages/AboutPage"
 import ContactPage from "../pages/ContactPage"
 import HomePage from "../pages/HomePage"
 import LoginPage from "../pages/LoginPage"
@@ -17,4 +18,5 @@ export const routes: RouteConfig[] = [
     {path: '/register', element: RegisterPage, isProtected: false},
     {path: '/skills', element: SkillsPage, isProtected: false},
     {path: '/contact', element: ContactPage, isProtected: false},
+    {path: '/about', element: AboutPage, isProtected: false},
 ]
