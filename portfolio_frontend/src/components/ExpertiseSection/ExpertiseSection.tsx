@@ -5,14 +5,16 @@ import "./ExpertiseSection.css";
 interface CardData {
   icon: string;
   title: string;
+  category_title: string;
   description: string;
   skills: string[];
 }
 
 const cardsData: CardData[] = [
   {
-    icon: "📊", // Replace with a React component/icon if needed
+    icon: "📊",
     title: "Data Analysis",
+    category_title: "data",
     description:
       "Transforming raw data into actionable insights through statistical analysis and visualization.",
     skills: [
@@ -25,6 +27,7 @@ const cardsData: CardData[] = [
   {
     icon: "📈",
     title: "Business Analysis",
+    category_title: "development",
     description:
       "Bridging the gap between business needs and technical solutions through strategic analysis.",
     skills: [
@@ -37,6 +40,7 @@ const cardsData: CardData[] = [
   {
     icon: "☁️",
     title: "Cloud Solutions",
+    category_title: "cloud",
     description:
       "Designing and implementing scalable cloud infrastructure and solutions.",
     skills: [
@@ -63,6 +67,7 @@ const ExpertiseSection: React.FC = () => {
             title={card.title}
             description={card.description}
             skills={card.skills}
+            category_title={card.category_title}
           />
         ))}
       </div>

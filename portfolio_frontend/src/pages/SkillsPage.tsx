@@ -1,8 +1,9 @@
 import { Star, StarHalf } from "lucide-react";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { projectsExport, skillsExport } from "../hooks/useProjects";
 import "../styles/SkillsPage.css";
 import Navbar from "../components/Navbar/Navbar";
+import { useLocation } from "react-router-dom";
 
 function RatingStars({ rating }: { rating: number }) {
   const fullStars = Math.floor(rating);
@@ -26,6 +27,18 @@ const SkillsPage: React.FC = () => {
   const [activeCategory, setActiveCategory] = useState("data");
   const skills = skillsExport;
   const projects = projectsExport;
+
+  const location = useLocation();
+  const { skill: navigatedSkill } = location.state || {};
+
+  useMemo(() => {
+    if (
+      navigatedSkill &&
+      ["data", "cloud", "development"].includes(navigatedSkill)
+    ) {
+      setActiveCategory(navigatedSkill);
+    }
+  }, [navigatedSkill]);
 
   return (
     <>

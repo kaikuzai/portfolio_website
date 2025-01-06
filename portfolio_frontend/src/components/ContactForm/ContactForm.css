@@ -1,6 +1,6 @@
 .contact-container {
     min-height: 85vh;
-    background: linear-gradient(to bottom, #ffffff, rgba(124, 58, 237, 0.05));
+    background: linear-gradient(to bottom, #ffffff, #ededed);
     padding: 2rem 1rem;
   }
   
@@ -120,17 +120,16 @@
   .submit-button {
     width: 100%;
     padding: 0.75rem 1.5rem;
-    background: #7c3aed;
+    background: #000000;
     color: white;
     border: none;
     border-radius: 0.5rem;
     font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.2s;
   }
   
   .submit-button:hover {
-    background: #6d28d9;
+    background: #3a3a3a;
   }
   
   .submit-button:disabled {
