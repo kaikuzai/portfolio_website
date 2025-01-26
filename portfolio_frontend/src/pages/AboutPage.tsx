@@ -13,13 +13,13 @@ export const AboutPage: FC = () => {
   };
   return (
     <>
-      <Navbar />
+      <Navbar page="about" />
       <div className="about-container">
         <div className="about-content">
           <div className="about-grid">
             <div className="image-section">
               <img
-                src="src/assets/headshot2.JPEG"
+                src="src/assets/headshot.JPEG"
                 alt="Dylan"
                 className="profile-image"
               />

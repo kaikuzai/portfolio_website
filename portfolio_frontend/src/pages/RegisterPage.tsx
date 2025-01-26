@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 const RegisterPage: React.FC = () => {
   return (
     <>
-      <Navbar />
+      <Navbar page="register" />
       <div className="register-page">
         <RegisterCard />
       </div>

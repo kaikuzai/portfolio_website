@@ -11,6 +11,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     color: #000;
+    text-decoration: none;
   }
   
   .navbar-links {
@@ -45,14 +46,34 @@
   .btn-login:hover {
     background-color: #333;
   }
+
+  .btn-about {
+    display: none;
+  }
   
   @media (max-width: 768px) {
     .navbar-links {
-      display: none; /* Hide links on smaller screens */
+      display: none;
     }
   
     .btn-login {
-      font-size: 0.9rem; /* Adjust button size */
+      font-size: 0.9rem;
+      display: none;
+    }
+
+    .btn-about {
+      font-size: 0.9rem;
+      display: block;
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      color: #fff;
+      background-color: #000;
+      border: none;
+      border-radius: 5px;
+    }
+
+    .btn-about-hide {
+      display: none;
     }
   }
   

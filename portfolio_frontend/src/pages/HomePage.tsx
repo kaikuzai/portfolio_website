@@ -8,7 +8,7 @@ import "../styles/HomePage.css";
 const HomePage: React.FC = () => {
   return (
     <div className="homepage">
-      <Navbar />
+      <Navbar page="home" />
       <HeroSection />
       <ExpertiseSection />
       <Footer />

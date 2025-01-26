@@ -3,7 +3,7 @@ import { useMemo, useState } from "react";
 import { projectsExport, skillsExport } from "../hooks/useProjects";
 import "../styles/SkillsPage.css";
 import Navbar from "../components/Navbar/Navbar";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 
 function RatingStars({ rating }: { rating: number }) {
   const fullStars = Math.floor(rating);
@@ -42,7 +42,7 @@ const SkillsPage: React.FC = () => {
 
   return (
     <>
-      <Navbar />
+      <Navbar page="skills" />
       <div className="skill-details">
         {/* Category Navigation */}
         <nav className="category-nav">
@@ -108,9 +108,21 @@ const SkillsPage: React.FC = () => {
                       ))}
                     </div>
                     {project.link && (
-                      <a href={project.link} className="project-link">
+                      <a
+                        href={project.link}
+                        target="_blank"
+                        className="project-link"
+                      >
                         View Project
                       </a>
+                    )}
+                    {project.projectLink && (
+                      <Link
+                        to={`/projects/${project.projectLink}`}
+                        className="project-link"
+                      >
+                        View Project
+                      </Link>
                     )}
                   </div>
                 </div>
