@@ -6,7 +6,7 @@ import Navbar from "../components/Navbar/Navbar";
 const LoginPage: React.FC = () => {
   return (
     <>
-      <Navbar page="login" />
+      <Navbar />
       <div className="login-page">
         <LoginCard />
       </div>

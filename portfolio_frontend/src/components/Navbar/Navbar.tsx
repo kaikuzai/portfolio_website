@@ -3,10 +3,10 @@ import "./Navbar.css";
 import { useNavigate } from "react-router-dom";
 
 interface PageLocation {
-  page: "about" | "home" | "contact" | "login" | "register" | "skills";
+  aboutPage?: boolean;
 }
 
-const Navbar: React.FC<PageLocation> = ({ page }) => {
+const Navbar: React.FC<PageLocation> = ({ aboutPage }) => {
   const navigate = useNavigate();
 
   const handleHome = () => {
@@ -46,7 +46,7 @@ const Navbar: React.FC<PageLocation> = ({ page }) => {
       <button className="btn-login" onClick={handleLogin}>
         Login
       </button>
-      {page !== "about" ? (
+      {!aboutPage ? (
         <button className="btn-about" onClick={handleAbout}>
           About me
         </button>

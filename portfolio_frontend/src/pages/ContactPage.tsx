@@ -5,7 +5,7 @@ import Navbar from "../components/Navbar/Navbar";
 const ContactPage: React.FC = () => {
   return (
     <>
-      <Navbar page="contact" />
+      <Navbar />
       <Contact />
     </>
   );

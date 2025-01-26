@@ -42,7 +42,7 @@ const SkillsPage: React.FC = () => {
 
   return (
     <>
-      <Navbar page="skills" />
+      <Navbar />
       <div className="skill-details">
         {/* Category Navigation */}
         <nav className="category-nav">

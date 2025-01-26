@@ -13,7 +13,7 @@ export const AboutPage: FC = () => {
   };
   return (
     <>
-      <Navbar page="about" />
+      <Navbar aboutPage={true} />
       <div className="about-container">
         <div className="about-content">
           <div className="about-grid">
